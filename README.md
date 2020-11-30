@@ -12,7 +12,7 @@
 #### Instructions
 
 * Clone the git repository
-* Run the command `bundle install`
+* Run the commands `bundle install` and `yarn install`
 * Create `database.yml` by referring to `database.example.yml` and updating the `username/password`
 * Setup the database using the command `bundle exec rails db:setup`
 * Run the test suite using `bundle exec rspec` to confirm if the setup is successful.
