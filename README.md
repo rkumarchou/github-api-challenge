@@ -62,3 +62,16 @@ Github REST API: https://docs.github.com/en/free-pro-team@latest/rest/reference/
 * Sidekiq workers and cron jobs which run at specific intervals can be used to watch the repository and update the records in the database based on the last updated at value.
 * Formatted errors logging and notifying using services such as rollbar can be introduced.
 * Other filters can be introduced to filter commits by author, date since, date until, etc. 
+
+#### Screenshots
+* Home page:
+![Home page](/public/default.png?raw=true "Home page")
+
+* Verified commits:
+![Verified commits](/public/verified.png?raw=true "Verified commits")
+
+* Invalid repo path:
+![Invalid path](/public/invalid.png?raw=true "Invalid path")
+
+* Non existent repo:
+![Non existent](/public/non_existent.png?raw=true "Non existent")
