@@ -56,6 +56,9 @@ Github REST API: https://docs.github.com/en/free-pro-team@latest/rest/reference/
 #### Future Enhancements
 * Feature specs to test the UI level functionality can be added for checking the functionality using libs such as capybara, cucumber, siteprism.
 * Fetched results can be stored in the database/cache to reduce number of API calls.
-* Sidekiq workers and cron jobs which run at specific intervals can be used to watch the repository and update the records in the database.
+* Commits model can hold parent commits' ids which can be used to construct the commit tree for the repo.
+* Similarly repo model can be introduced and be referenced as foreign key in commits model.
+* Thus we can have repo has many commits association.
+* Sidekiq workers and cron jobs which run at specific intervals can be used to watch the repository and update the records in the database based on the last updated at value.
 * Formatted errors logging and notifying using services such as rollbar can be introduced.
-* Other filters can be introduced to filter commits by author, date, etc.
+* Other filters can be introduced to filter commits by author, date since, date until, etc. 

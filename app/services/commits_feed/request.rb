@@ -31,7 +31,7 @@ module CommitsFeed
     rescue RestClient::Forbidden
       @errors << 'Forbidden.'
     rescue StandardError => e
-      @errors << 'Something went wrong.'
+      @errors << 'Something went wrong, please check the application logs.'
       Rails.logger.info e
     end
   end
